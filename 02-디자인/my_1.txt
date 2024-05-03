@@ -1,0 +1,22 @@
+240503_1
+
+
+**메모
+- 점심시간 : 1시30분
+- 
+
+
+**수업 정리본
+-https://odada.me/
+-freepik(web temple)
+-W3C : 웹 표준 교과서
+
+-index + github(Standalone Installer) 다운 + (이 프로그램 사용을 위해 node.js(LTS)다운
+-1. git(경로 설정) : 원하는 폴더에서 우클릭 >> git bash here >> git clone 선생님 git 주소 "https://github.com/oddoddo/wdp0503.git" past
+-2. git pull : 업데이트 된 파일 다운로드
+
+https://odada.me/283
+https://git-scm.com/
+https://nodejs.org/en/download
+
+-
