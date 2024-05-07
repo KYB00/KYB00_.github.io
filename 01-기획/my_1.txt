@@ -37,3 +37,8 @@ KAKAO : kakao, APPLE SD Gothic NEO, 맑은 고딕
 
 -상세페이지 참고 페이지
 https://www.gdweb.co.kr/sub/view.asp?displayrow=60&Txt_key=all&Txt_word=&Txt_agnumber=&Txt_fgbn=5&Txt_bcode1=024510001&Txt_gbflag=&Txt_bcode2=&Txt_bcode3=&Txt_bcode4=&Txt_bcode5=&Page=1&str_no=15944
+
+https://www.gdweb.co.kr/sub/view.asp?displayrow=60&Txt_key=all&Txt_word=&Txt_agnumber=&Txt_fgbn=5&Txt_bcode1=024510001&Txt_gbflag=&Txt_bcode2=&Txt_bcode3=&Txt_bcode4=&Txt_bcode5=&Page=1&str_no=12993
+
+https://www.gdweb.co.kr/sub/view.asp?Txt_fgbn=5&str_no=9705
+
