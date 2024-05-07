@@ -7,4 +7,13 @@
 -W3C : 웹 표준 교과서
 -notion을 활용한 포폴도 염두
 
+**피그마
 
+- frame : 전반적인 콘텐츠 제작을 위한 툴
+- section : 영역을 구분하기 위한 툴(ex. 헤더, 메인, 풋터... or section 하위로 frame 배치됨)
+- 원하는 이미지 크롭 : (원하는 사이즈로)copy/past as >> copy as PNG >> 붙여넣기
+  (이미지 안쪽으로도 크롭 가능하고 바깥쪽으로 크롭시 배경화면 포함된 여백 이미지도 가능)
+- color mode : RGB(보통 코팅할 때 사용) or Hex(일반적인 디자인에 사용)
+- color 색상값은 항상 libraries에 저장 해놓기.(모두가 알아볼 수 있게 이름 설정)
+- 
+- commend + D : 복제 / Shift : 다중 선택 / 
