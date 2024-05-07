@@ -16,13 +16,12 @@
 - 원하는 이미지 크롭 : (원하는 사이즈로)copy/past as >> copy as PNG >> 붙여넣기
   (이미지 안쪽으로도 크롭 가능하고 바깥쪽으로 크롭시 배경화면 포함된 여백 이미지도 가능)
 - color mode : RGB(보통 코팅할 때 사용) or Hex(일반적인 디자인에 사용)
-- color 색상값은 항상 libraries에 저장 해놓기.(모두가 알아볼 수 있게 이름 설정)
+- color 색상값은 항상 libraries에 저장 해놓기.(모두가 알아볼 수 있게 이름 설정_스타일)
 - create component(상단의 다이아 모양 선택해도 됨)
   매칭툴 사용 시 꼬일 수 있으니 컴포넌트 활용하기
 - 마스크의 경우 포토샵과 달리 선택 영역이 원하는 이미지 아래 쪽으로 들어가게 설정해야 됨
 - Assets : 기초 자원(ex. button/btn-primary) 등 경로를 지정해서 좀 더 원활한 작업이 되게 끔
   같은 종류들끼리 묶어서 분류 하는게 좋음
--
 
 줄 간격은 150% 추천
 
@@ -32,8 +31,12 @@ KAKAO : kakao, APPLE SD Gothic NEO, 맑은 고딕
  Noto Sans CJK
 
 
+- **Shift+A : 오토 레이아웃_텍스트를 추가해도 작업한 데이터의 여백을 유지하며 늘어남
+     오토 레이아웃 개념 파악하기
 
-- commend + D : 복제 / Shift : 다중 선택 / 
+-**Constraints : 각 개체별로 비율에 맞춰 늘리는 시스템
+
+- **commend + D : 복제 / Shift : 다중 선택 / 
 
 -상세페이지 참고 페이지
 https://www.gdweb.co.kr/sub/view.asp?displayrow=60&Txt_key=all&Txt_word=&Txt_agnumber=&Txt_fgbn=5&Txt_bcode1=024510001&Txt_gbflag=&Txt_bcode2=&Txt_bcode3=&Txt_bcode4=&Txt_bcode5=&Page=1&str_no=15944
