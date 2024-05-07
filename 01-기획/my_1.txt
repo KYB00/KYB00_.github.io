@@ -1,36 +1,10 @@
-240503_1
+240507
 
-
-**메모
--구글 김종민
-- 홈페이지 내의 디자인들 벤치마킹하기
-https://www.gdweb.co.kr/sub/view.asp?Txt_fgbn=5&str_no=18965
 
 **수업 정리본
 -https://odada.me/
 -freepik(web temple)
 -W3C : 웹 표준 교과서
-
-**visual studio code
--수정 : 노랑 / 신규 : 초록으로 표기됨
--source control에서 '...'에서 pull 사용 시 연결된 다른 작업 스테이지 자료 업로드됨
--clone reposistory : A 환경의 자료를 B 환경과 연결하여
-ex.집에서 home 작업 환경해서 작업 후 office에서 집에서 한 home 자료를 office에 업로드 하는 방식
-ex.설정 시 상단의 search에서 맞는 경로로 설정
-
-**github
--원하는 폴더에 git bash here로 visual studio code 프로그램 >> source control >> 수정 된 파일 + 로 업로드 준비
->> message에 부제목 입력 후 >> commi >> Sync changes 1 까지 해야 업로드
+-notion을 활용한 포폴도 염두
 
 
-
--index + github(Standalone Installer) 다운 + (이 프로그램 사용을 위해 node.js(LTS)다운
--1. git(경로 설정) : 원하는 폴더에서 우클릭 >> git bash here >> git clone 선생님 git 주소 "https://github.com/oddoddo/wdp0503.git" past
--2. git pull : 업데이트 된 파일 다운로드
--
-
-https://odada.me/283
-https://git-scm.com/
-https://nodejs.org/en/download
-
--
