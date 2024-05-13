@@ -1,22 +1,26 @@
-240503_1
+24.5.13(월)
+
+-google(firebase)
+https://www.wix.com/studio
 
 
-**메모
-- 점심시간 : 1시30분
-- 
-
-
-**수업 정리본
--https://odada.me/
--freepik(web temple)
--W3C : 웹 표준 교과서
-
--index + github(Standalone Installer) 다운 + (이 프로그램 사용을 위해 node.js(LTS)다운
--1. git(경로 설정) : 원하는 폴더에서 우클릭 >> git bash here >> git clone 선생님 git 주소 "https://github.com/oddoddo/wdp0503.git" past
--2. git pull : 업데이트 된 파일 다운로드
-
-https://odada.me/283
-https://git-scm.com/
-https://nodejs.org/en/download
-
+**
+-정보처리기사
+-웹디자인기능사
 -
+
+**w63school
+-javascript >>>간단화 >>> Jquery
+-(최신 개발 과정)react  >>>간단화 >>> next.js
+-react(html+css+js) 모두 작업이 가능한 환경이라 유입되는 중인 기능
+
+-vscode에 "~.html"로 파일 생성시 '<>' 표시되며 활성화 준비
+-ico 만들기 검색 시 팝업창 옆의 아이콘 생성 가능
+
+-<html lang="ko"> : 한국어 기반 사이트 설정
+-플러그인 / live server / auto close tag / auto raname tage / korea lanuage pack for visual /
+prettier(설정 값 : https://green-grapes.tistory.com/entry/VSCode-prettier-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0)
+-- './' 소스 제어에 있는 소스를 가져올 때의 명령어
+-
+
+
