@@ -1,529 +1,243 @@
 <!-- 문서의 형식 선언 (html5) -->
 <!DOCTYPE html>
 <html lang="ko">
+    <!-- 페이지 설정 -->
     <head>
-        <head>
-            <meta charset="UTF-8" />
-            <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-            <meta name="subject" content="포트폴리오" />
-            <meta name="description" content="프론트엔드 개발자 이보아 포트폴리오 입니다." />
-            <meta name="keywords" content="프론트엔드, 개발자, 웹퍼블리셔, 웹사이트 만들기" />
-            <meta name="author" content="이보아" />
-            <title>이보아 | 프론트엔드 개발자 포트폴리오</title>
-            <!-- favicon -->
-            <link rel="icon" type="image/png" sizes="32x32" href="img/pf_logo.png" />
-            <!-- css -->
-            <link rel="stylesheet" href="css/font.css" />
-            <link rel="stylesheet" href="css/reset.css" />
-            <link rel="stylesheet" href="css/style.css" />
-            <!-- icon -->
-            <link
-                rel="stylesheet"
-                href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
-                integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
-                crossorigin="anonymous"
-            />
-            <!-- font -->
-            <link rel="preconnect" href="https://fonts.gstatic.com" />
-            <link href="https://fonts.googleapis.com/css?family=Fauna+One" rel="stylesheet" />
-            <link href="https://fonts.googleapis.com/css2?family=Archivo&amp;display=swap" rel="stylesheet" />
-            <link
-                href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
-                rel="stylesheet"
-            />
-            <link
-                href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&amp;display=swap"
-                rel="stylesheet"
-            />
-        </head>
-        <body style="">
-            <div id="cover" class="cover-left"></div>
-            <!--// page transition -->
-            <!-- skip nav-->
-            <div id="skip">
-                <a href="#intro_sec1"> 메인 바로가기</a>
-                <a href="#intro_sec2"> ABOUT 바로가기</a>
-                <a href="#intro_sec3"> ABOUT +IMG 소개부분 바로가기</a>
-                <a href="#intro_sec4"> SKILL 바로 가기 </a>
-                <a href="#next_website"> webSite 로 이동 페이지 </a>
-            </div>
-            <!--// skip nav-->
-            <div id="wrap">
-                <div class="cursor" style="top: 116px; left: 1420px"></div>
-                <!--// cursor-->
-                <div class="left-nav" style="opacity: 1">
-                    <span class="ir_su">왼쪽 네비게이션 부분</span>
-                    <nav>
-                        <h2 class="nav-logo">B <sup>©</sup></h2>
-                        <div class="nav-text">
-                            <p>Portfolio</p>
-                        </div>
-                    </nav>
-                </div>
-                <div class="icon-wrap" style="opacity: 1">
-                    <a href="javascript:;" id="nav_icon">
-                        <div class="icon"></div>
-                    </a>
-                </div>
-                <nav class="overlay">
-                    <ul class="menu">
-                        <li data-text="About">
-                            <a href="http://leeboa.com/" class="page_click" data-name="index">About</a>
+        <!-- 문자 인코딩 설정 -->
+        <meta charset="UTF-8" />
+        <!-- 반응형 웹 설정 -->
+        <meta name="viewport" content="width=device-width" />
+        <!-- 문서 제목 -->
+        <title>기본 페이지</title>
+        <!-- 오픈 그래프 -->
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="페이지 제목" />
+        <meta property="og:description" content="페이지 설명" />
+        <meta property="og:image" content="http://www.mysite.com/myimage.jpg" />
+        <meta property="og:url" content="http://www.mysite.com" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="페이지 제목" />
+        <meta name="twitter:description" content="페이지 설명" />
+        <meta name="twitter:image" content="http://www.mysite.com/article/article1.html" />
+        <meta name="twitter:domain" content="사이트 명" />
+        <link rel="shortcut icon" href="http://www.mysite.com/favicon.ico" />
+        <!-- 스타일 시트 -->
+        <style>
+            /* 선택자 {속성: 값;} */
+            /* class 선택자 .(점) 표기 */
+            .box1 {
+                background-color: pink;
+            }
+            /* id 선택자 #(샵) 표기 */
+            #box1 {
+                background-color: blue;
+            }
+        </style>
+    </head>
+
+    <!-- 페이지 본문 -->
+    <body>
+        <!-- 이미지 분기대응 -->
+        <picture>
+            <!-- 600px 이하 -->
+            <source media="(max-width: 600px)" srcset="./images/img_smallflower.jpg" />
+            <!-- 1500px 이하 -->
+            <source media="(max-width: 1500px)" srcset="./images/img_flowers.jpg" />
+            <!-- 1500px 이상 -->
+            <source srcset="./images/flowers.jpg" />
+            <img src="./images/img_smallflower.jpg" alt="" />
+        </picture>
+
+        <!-- layout 태그 -->
+        <!-- .wrap / #wrap -->
+        <div class="wrap">
+            <header>
+                <h1>
+                    <a href="#">logo</a>
+                </h1>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#">menu1</a>
+                            <ul>
+                                <li><a href="#">menu1-1</a></li>
+                                <li><a href="#">menu1-2</a></li>
+                                <li><a href="#">menu1-3</a></li>
+                            </ul>
                         </li>
-                        <li data-text="WebSite"><a href="http://leeboa.com/site.html" data-name="site">WebSite</a></li>
-                        <li data-text="Mobile">
-                            <a href="http://leeboa.com/moblie.html" class="page_click" data-name="moblie">Mobile</a>
+                        <li>
+                            <a href="#">menu2</a>
                         </li>
-                        <li data-text="Javascript">
-                            <a href="http://leeboa.com/script.html" class="page_click" data-name="script">Javascript</a>
-                        </li>
-                        <li data-text="Javascript">
-                            <a href="http://leeboa.com/contact.html" class="page_click" data-name="contact">Contact</a>
+                        <li>
+                            <a href="#">menu3</a>
                         </li>
                     </ul>
                 </nav>
-                <section id="intro_sec1">
-                    <h2 class="ir_su">메인</h2>
-                    <nav class="m_navi">
-                        <h2 class="m_nav-logo">B <sup>©</sup></h2>
-                    </nav>
-                    <!--// mobile nav -->
-                    <div class="intro">
-                        <div class="inner">
-                            <span class="ir_su">메인 상단 네비 부분 </span>
-                            <div class="main-top-area">
-                                <div class="left-tit" style="transform: translate(0px, 0px); opacity: 1">
-                                    <a href="#">
-                                        Front-end<br />
-                                        Developer
-                                    </a>
-                                </div>
-                                <ol class="center-nav" style="transform: translate(0px, 0px); opacity: 1">
-                                    <li>
-                                        <a href="javascript:;" class="page_click active_line" data-name="index">
-                                            <span class="ir_su">About 홈페이지로 이동 </span>
-                                            <span>About</span>
-                                            <p>It's about me and my skill. Click if you want to know.</p>
-                                            <span>01</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:;" class="page_click" data-name="site">
-                                            <span class="ir_su">WebSite 홈페이지로 이동 </span>
-                                            <span>WebSite</span>
-                                            <p>It's a website I made. I made various websites.</p>
-                                            <span>02</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:;" class="page_click" data-name="moblie">
-                                            <span class="ir_su">Mobile 홈페이지로 이동 </span>
-                                            <span>Mobile</span>
-                                            <p>It's a mobile website I made. Click if you're curious.</p>
-                                            <span>03</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:;" class="page_click" data-name="script">
-                                            <span class="ir_su">JavaScript 홈페이지로 이동 </span>
-                                            <span>JavaScript</span>
-                                            <p>Various works created with JavaScript.</p>
-                                            <span>04</span>
-                                        </a>
-                                    </li>
-                                </ol>
-                            </div>
-                            <!--// center nav -->
-                            <div class="right-btn-wrap" style="transform: translate(0px, 0px); opacity: 1">
-                                <div class="right-btn">
-                                    <span class="ir_su">contact 홈페이지로 이동 </span>
-                                    <a href="contact.html">contact</a>
-                                    <svg id="circle">
-                                        <circle
-                                            cx="35"
-                                            cy="35"
-                                            r="35"
-                                            stroke="#e7e7e7"
-                                            stroke-width="1"
-                                            fill="transparent"
-                                        ></circle>
-                                    </svg>
-                                </div>
-                            </div>
-                            <!-- SVG circle -->
-                            <!--// main-top-area -->
-                            <div class="main-cont-area">
-                                <div class="main_cont">
-                                    <figure class="intro-img" style="transform: translate(0px, 0px); opacity: 1">
-                                        <img src="img/sec_img1.png" alt=" about 인트로 이미지 " />
-                                        <figcaption>Intro</figcaption>
-                                    </figure>
-                                    <div class="main-title">
-                                        <h1
-                                            data-splitting=""
-                                            class="words chars splitting"
-                                            style="--word-total: 2; --char-total: 12"
-                                        >
-                                            <span class="word" data-word="Boa" style="--word-index: 0"
-                                                ><span
-                                                    class="char"
-                                                    data-char="B"
-                                                    style="
-                                                        --char-index: 0;
-                                                        transform-origin: 50.4766px 65.6016px;
-                                                        opacity: 1;
-                                                        transform: translate(0px, 0px);
-                                                    "
-                                                    >B</span
-                                                ><span
-                                                    class="char"
-                                                    data-char="o"
-                                                    style="
-                                                        --char-index: 1;
-                                                        transform-origin: 55.3906px 65.6016px;
-                                                        opacity: 1;
-                                                        transform: translate(0px, 0px);
-                                                    "
-                                                    >o</span
-                                                ><span
-                                                    class="char"
-                                                    data-char="a"
-                                                    style="
-                                                        --char-index: 2;
-                                                        transform-origin: 52.6406px 65.6016px;
-                                                        opacity: 1;
-                                                        transform: translate(0px, 0px);
-                                                    "
-                                                    >a</span
-                                                ></span
-                                            >
-                                            <br /><span class="word" data-word="Portfolio" style="--word-index: 1"
-                                                ><span
-                                                    class="char"
-                                                    data-char="P"
-                                                    style="
-                                                        --char-index: 3;
-                                                        transform-origin: 48.5078px 65.6016px;
-                                                        opacity: 1;
-                                                        transform: translate(0px, 0px);
-                                                    "
-                                                    >P</span
-                                                ><span
-                                                    class="char"
-                                                    data-char="o"
-                                                    style="
-                                                        --char-index: 4;
-                                                        transform-origin: 55.3906px 65.6016px;
-                                                        opacity: 1;
-                                                        transform: translate(0px, 0px);
-                                                    "
-                                                    >o</span
-                                                ><span
-                                                    class="char"
-                                                    data-char="r"
-                                                    style="
-                                                        --char-index: 5;
-                                                        transform-origin: 48.6328px 65.6016px;
-                                                        opacity: 1;
-                                                        transform: translate(0px, 0px);
-                                                    "
-                                                    >r</span
-                                                ><span
-                                                    class="char"
-                                                    data-char="t"
-                                                    style="
-                                                        --char-index: 6;
-                                                        transform-origin: 42.6641px 65.6016px;
-                                                        opacity: 1;
-                                                        transform: translate(0px, 0px);
-                                                    "
-                                                    >t</span
-                                                ><span
-                                                    class="char"
-                                                    data-char="f"
-                                                    style="
-                                                        --char-index: 7;
-                                                        transform-origin: 42.0078px 65.6016px;
-                                                        opacity: 1;
-                                                        transform: translate(0px, 0px);
-                                                    "
-                                                    >f</span
-                                                ><span
-                                                    class="char"
-                                                    data-char="o"
-                                                    style="
-                                                        --char-index: 8;
-                                                        transform-origin: 55.3906px 65.6016px;
-                                                        opacity: 1;
-                                                        transform: translate(0px, 0px);
-                                                    "
-                                                    >o</span
-                                                ><span
-                                                    class="char"
-                                                    data-char="l"
-                                                    style="
-                                                        --char-index: 9;
-                                                        transform-origin: 40.2422px 65.6016px;
-                                                        opacity: 1;
-                                                        transform: translate(0px, 0px);
-                                                    "
-                                                    >l</span
-                                                ><span
-                                                    class="char"
-                                                    data-char="i"
-                                                    style="
-                                                        --char-index: 10;
-                                                        transform-origin: 22.7266px 65.6016px;
-                                                        opacity: 1;
-                                                        transform: translate(0px, 0px);
-                                                    "
-                                                    >i</span
-                                                ><span
-                                                    class="char"
-                                                    data-char="o"
-                                                    style="
-                                                        --char-index: 11;
-                                                        transform-origin: 55.3906px 65.6016px;
-                                                        opacity: 1;
-                                                        transform: translate(0px, 0px);
-                                                    "
-                                                    >o</span
-                                                ></span
-                                            >
-                                        </h1>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            </header>
+            <main>
+                <!-- 주제별 나눔 -->
+                <section>
+                    <h2>section title</h2>
+                    <p>section content</p>
                 </section>
-                <!--// section1 -->
-                <section id="intro_sec2">
-                    <h2 class="ir_su">about 부분</h2>
-                    <div class="inner">
-                        <div class="about clearfix">
-                            <div class="overview">
-                                <span>Overview</span>
-                                <ol class="overview_img_wrap">
-                                    <li class="ov_img1">
-                                        <img src="img/ov_img1.gif" alt="" />
-                                    </li>
-                                    <li class="ov_img2">
-                                        <img src="img/ov_img2.gif" alt="" />
-                                    </li>
-                                    <li class="ov_img3">
-                                        <img src="img/ov_img3.gif" alt="" />
-                                    </li>
-                                </ol>
-                            </div>
-                            <div class="about-text">
-                                <p>
-                                    <strong class="ov_img_hv1">상상한 무궁무진한 아이디어</strong>를 제가 배운 기술로
-                                    구현해가는 과정이 재밌습니다. 항상 새로운 시도를 두려워하지 않는 프론트엔드 개발자가
-                                    되겠습니다.
-                                </p>
-                                <p class="last_p">
-                                    <strong class="ov_img_hv2">“smooth waters run deep”</strong>
-                                    제가 가장 좋아하는 영어 격언 입니다. 거칠고 빠르게 지나가는 물보다 잔잔하게 오랫동안
-                                    깊이 있게 흐르는 물처럼 꾸준히 공부하고, 계속 해서 나아갈 자신이 있습니다. 성실하게
-                                    쌓은 지식으로, 회사에 실질적인 도움이 되는
-                                    <strong class="ov_img_hv3">프론트엔드 개발자</strong>로 일하고 싶습니다.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+                <section>
+                    <h2>section title</h2>
+                    <p>section content</p>
                 </section>
-                <!--// section2 -->
-                <section id="intro_sec3" style="opacity: 0">
-                    <h2 class="ir_su">about소개 + 이미지 부분</h2>
-                    <div class="about-img-area">
-                        <div class="img_text_cont">
-                            <h2 class="title">
-                                Do you want to see
-                                <em class="circle_point">
-                                    more?
-                                    <svg
-                                        class="circle_point"
-                                        viewBox="0 0 416 178"
-                                        width="422"
-                                        height="180"
-                                        fill="none"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                        <path
-                                            class="circle_point_path"
-                                            d="M410.253 113.699c-111.805 25.438-395.886 73.056-407.44-21.27-9.3-75.975 173.292-85.082 189.343-87.243 16.05-2.16 214.059-18.105 221.119 39.5C423.872 131.172 189.5 163.5 137.5 176"
-                                            stroke="#121111"
-                                            stroke-width="3"
-                                            stroke-miterlimit="10"
-                                        ></path>
-                                    </svg>
-                                </em>
-                            </h2>
-                            <div class="more_inf">
-                                <span class="name"> Welcome My webSite </span>
-                                <div class="small_img">
-                                    <img src="img/me.gif" alt="소개 gif" />
-                                </div>
-                            </div>
-                        </div>
-                        <div class="background">
-                            <picture>
-                                <source media="(min-width:1230px)" srcset="img/pf_img2.png" />
-                                <source media="(min-width:0px)" srcset="img/pf_img2_685.png" />
-                                <img src="img/pf_img2.png" alt="나의소개 이미지" />
-                            </picture>
-                        </div>
-                    </div>
-                </section>
-                <!--// section3 -->
-                <section id="intro_sec4">
-                    <h2 class="ir_su">skill 부분</h2>
-                    <div class="inner">
-                        <div class="text_area">
-                            <div class="small_skill_text">
-                                <span>My Skill</span>
-                            </div>
-                            <div class="main_skill_text">
-                                <span>
-                                    This is an important skill in creating a website. Web standards, grids, gsap-based
-                                    websites and It's a mock-up made using Figma.</span
-                                >
-                            </div>
-                        </div>
-                        <div class="skill_container">
-                            <ol class="clearfix">
-                                <li class="empty"></li>
-                                <!--// skill empty -->
-                                <li>
-                                    <h3>01</h3>
-                                    <dl class="skill_num_wrap">
-                                        <dt class="skill_sub_tit">webstandard</dt>
-                                        <dd>
-                                            <p>
-                                                웹표준을 준수하여 만든사이트입니다. 웹사이트에서 가장 많이 사용되는
-                                                팝업, 탭메뉴, 게시판, 슬라이더등의 다양한 기능을 웹표준에 맞게 제작한
-                                                사이트입니다.
-                                            </p>
-                                            <a href="http://leeboa.com/portfolio/webstandard/index.html" target="_blank"
-                                                >Learn More</a
-                                            >
-                                        </dd>
-                                    </dl>
-                                </li>
-                                <!--// skill1 -->
-                                <li>
-                                    <h3>02</h3>
-                                    <dl class="skill_num_wrap">
-                                        <dt class="skill_sub_tit">Magazine</dt>
-                                        <dd>
-                                            <p>
-                                                그리드를 사용하여 작업한 웹사이트 입니다 메거진 형식으로 레이아웃으로
-                                                제작하였고, 검색창 레이어 팝업 등의 기능을 넣어서 반응형으로
-                                                제작하였습니다.
-                                            </p>
-                                            <a
-                                                href="https://leeboa2005.github.io/Ministry-of--Environment-magazine/"
-                                                target="_blank"
-                                                >Learn More</a
-                                            >
-                                        </dd>
-                                    </dl>
-                                </li>
-                                <!--// skill2 -->
-                                <li>
-                                    <h3>03</h3>
-                                    <dl class="skill_num_wrap">
-                                        <dt class="skill_sub_tit">gsap Site</dt>
-                                        <dd>
-                                            <p>
-                                                gsap를 이용하여 작업한 웹사이트입니다. 별똥별이 떨어지는 애니메이션과
-                                                스크롤 했을때 각각의 행성 움직임을 다르게 하여 좀 더 동적인 웹사이트를
-                                                제작하였습니다.
-                                            </p>
-                                            <a href="http://leeboa.com/portfolio/space/" target="_blank">Learn More</a>
-                                        </dd>
-                                    </dl>
-                                </li>
-                                <!--// skill3 -->
-                                <li>
-                                    <h3>04</h3>
-                                    <dl class="skill_num_wrap">
-                                        <dt class="skill_sub_tit">REDSOUND</dt>
-                                        <dd>
-                                            <p>
-                                                피그마를 이용하여 만든 REDSOUND 목업입니다. 메인, 추천, 마이페이지, 검색
-                                                페이지등의 다양한 페이지를 피그마를 통해 작업하였습니다.
-                                            </p>
-                                            <a href="https://leeboa2005.github.io/mockup/" target="_blank"
-                                                >Learn More</a
-                                            >
-                                        </dd>
-                                    </dl>
-                                </li>
-                                <!--// skill4 -->
-                            </ol>
-                        </div>
-                        <!--// skill_container-->
-                    </div>
-                </section>
-                <!--// section4 -->
-                <section class="common_next_wrap" id="next_website">
-                    <h2 class="ir_su">webSite 홈페이지 이동 페이지</h2>
-                    <div class="next_area">
-                        <a href="http://leeboa.com/site.html">
-                            <div class="small_skill_text">
-                                <span>Next - chapter 02</span>
-                            </div>
-                            <div class="main_skill_text">
-                                <span> WebSite </span>
-                            </div>
-                        </a>
-                    </div>
-                </section>
-                <!--// section5-->
-                <footer id="footer">
-                    <div class="footer_cont">
-                        <div class="footer_flex_wrap">
-                            <span class="ft_flex_box copyright">
-                                ©2021 LeeBoa. <br />
-                                All Rights Reserved.
-                            </span>
-                            <span class="ft_flex_box like_email">
-                                Do you like my portfolio?
-                                <a href="mailto:leeboa2003@naver.com" target="_blank">Send Email</a>
-                            </span>
-                            <ul class="ft_flex_box icon_wrap clearfix">
-                                <li></li>
-                                <li>
-                                    <a href="mailto:leeboa2003@naver.com" target="_blank"
-                                        ><i class="far fa-envelope"></i
-                                    ></a>
-                                </li>
-                                <li>
-                                    <a href="https://leeboa.gitbook.io/study/" target="_blank"
-                                        ><i class="fas fa-book"></i
-                                    ></a>
-                                </li>
-                                <li>
-                                    <a href="https://github.com/leeboa2005" target="_blank"
-                                        ><i class="fab fa-github"></i
-                                    ></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </footer>
-                <!--// footer -->
-            </div>
-            <!--// wrap -->
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-            <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
-            <script src="js/common.js"></script>
-            <script src="js/index.js"></script>
-        </body>
-    </head>
+                <!-- 독립된 기사나 글 -->
+                <article>
+                    <h2>article title</h2>
+                    <p>article content</p>
+                </article>
+                <!-- 사이드 컨텐츠 -->
+                <aside></aside>
+            </main>
+            <footer>footer</footer>
+        </div>
+
+        <!-- div 태그 -->
+        <!-- 웹페이지의 섹션을 그룹화하는데 사용됨 -->
+        <div class="box1">
+            <h2>타이틀</h2>
+            <!-- lorem10 -->
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, officiis.</p>
+        </div>
+        <div class="box1">
+            <h2>타이틀</h2>
+            <!-- lorem10 -->
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, officiis.</p>
+        </div>
+        <!-- id값은 중복 사용 금지 -->
+        <div id="box1">
+            <h2>타이틀</h2>
+            <!-- lorem10 -->
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, officiis.</p>
+        </div>
+        <div id="box2">
+            <h2>타이틀</h2>
+            <!-- lorem10 -->
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, officiis.</p>
+        </div>
+        <hr />
+        <!-- 블록 & 인라인 태그 -->
+
+        <!-- block -->
+        <!-- 기본값 : width 100% -->
+        <!-- 밑으로 쌓인다 -->
+        <div>block</div>
+        <div>block</div>
+        <div>block</div>
+
+        <!-- inline -->
+        <!-- width, height 적용 안됨 -->
+        <span>inline</span>
+        <span>inline</span>
+        <span>inline-추가추가</span>
+
+        <hr />
+        <!-- 제목 태그 -->
+        <h1>logo - 블로그</h1>
+        <h2>섹션 타이틀</h2>
+        <h3>섹션 서브 타이틀</h3>
+
+        <!-- 주석 -->
+        <!-- 문단 태그 -->
+        <p>
+            <strong>중요한 텍스트</strong> <br />
+            <b>굵은 텍스트</b> <em>Lorem ipsum dolor</em> sit amet <br />
+            consectetur adipisicing elit. Nam incidunt iusto ab neque odio voluptates! Illo sit commodi veniam neque
+            reiciendis soluta odio aut dolorem vitae vel ex, necessitatibus quas.
+        </p>
+
+        <!-- 링크 태그 -->
+        <a href="https://www.naver.com">naver</a>
+        <hr />
+        <!-- 이미지 태그 -->
+        <img
+            src="https://blogthumb.pstatic.net/MjAyNDA1MTNfMjM0/MDAxNzE1NTgyMjQ1NTY0.c8lvorE4TBxi_CEifXKA-eL2TJ6LQI7bf4y7AiJ4ngEg.XyCPZ4Y1R_AZ7k7KWTY4kUk-qb2qndz8zEHaJa_f2IQg.JPEG/dc2265a231a780a73d06d86597006e2a.jpg?type=s2"
+            alt="이미지 설명"
+        />
+        <!-- ./ 현재 위치 (로컬) -->
+        <!-- ../ 상위(로컬) -->
+        <img src="./images/mom.jpg" alt="" />
+
+        <!--  서버 경로 -->
+        <img src="/images/mom.jpg" alt="" />
+
+        <!-- 테이블 태그 -->
+        <table border="1">
+            <caption>
+                테이블 제목
+            </caption>
+            <!-- 열 그룹 -->
+            <colgroup>
+                <col style="width: 50%" />
+                <col span="2" style="width: 25%" />
+            </colgroup>
+            <!-- 테이블 머릿글 -->
+            <thead>
+                <!-- 행 -->
+                <tr>
+                    <!-- 열 -->
+                    <th>Company</th>
+                    <th>Contact</th>
+                    <th>Country</th>
+                </tr>
+            </thead>
+            <!-- 테이블 몸체 -->
+            <tbody>
+                <tr>
+                    <td>Alfreds Futterkiste</td>
+                    <td>Maria Anders</td>
+                    <td>Germany</td>
+                </tr>
+                <tr>
+                    <td>Centro comercial Moctezuma</td>
+                    <td>Francisco Chang</td>
+                    <td>Mexico</td>
+                </tr>
+            </tbody>
+            <!-- 테이블 바닥글 -->
+            <tfoot>
+                <tr>
+                    <td>Sum</td>
+                    <td>100</td>
+                    <td>200</td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <!-- 목록 태그 -->
+
+        <!-- 순서가 없는 목록 -->
+        <ul>
+            <li>사과</li>
+            <li>바나나</li>
+            <li>딸기</li>
+        </ul>
+
+        <!-- 순서가 있는 목록 -->
+        <ol>
+            <li>딸기</li>
+            <li>바나나</li>
+            <li>사과</li>
+        </ol>
+
+        <!-- 정의 목록 -->
+        <dl>
+            <dt>제목</dt>
+            <dd>설명</dd>
+            <dt>제목</dt>
+            <dd>설명</dd>
+        </dl>
+
+        <dl>
+            <dt>제목</dt>
+            <dd>설명</dd>
+        </dl>
+        <dl>
+            <dt>제목</dt>
+            <dd>설명</dd>
+        </dl>
+    </body>
 </html>
