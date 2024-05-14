@@ -24,6 +24,9 @@ https://www.wix.com/studio
 -플러그인 / live server / auto close tag / auto raname tage / korea lanuage pack for visual /
 prettier(설정 값 : https://green-grapes.tistory.com/entry/VSCode-prettier-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0)
 -- './' 소스 제어에 있는 소스를 가져올 때의 명령어
--
+
+
+-https://www.tpgi.com/color-contrast-checker/
+-https://codemyui.com/image-gallery-stacked-as-narrow-slits-and-expands-to-show-the-full-image-on-click/
 
 
